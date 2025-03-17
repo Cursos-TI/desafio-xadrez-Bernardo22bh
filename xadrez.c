@@ -1,32 +1,53 @@
 #include <stdio.h>
 
-// Desafio de Xadrez - MateCheck
-// Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
-// O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
+int main(){
 
-int main() {
-    // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
+    int i = 1;
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
+    printf("Bispo:\n");
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
+    while (i <= 5){
+      printf ("%d - Direita\n", i);
 
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
+      i++;
 
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
+    }
+    
+    printf ("\n");
+    printf("O Bispo moveu 5 casas para a diagonal superior. Saindo...\n");
+    printf("\n");
 
-    // Nível Mestre - Funções Recursivas e Loops Aninhados
-    // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    // Exemplo: Crie uma função recursiva para o movimento do Bispo.
+    i = 0;
 
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
+    printf("Torre:\n");
+
+    do{
+        if (i % 2 != 0){
+
+       printf ("%d - Cima Direita\n", i);
+
+    }
+
+    i++;
+
+    }while (i <= 10);
+
+    printf("\n");
+    printf ("A Torre moveu 5 casas para a direita. Saindo...\n");
+    printf("\n");
+
+    printf("Rainha:\n");
+
+    for(i = 0; i >= -8; i--){
+        if (i < 0){
+            printf ("%d - Esquerda\n", i);
+        }
+    }
+
+    printf("\n");
+    printf("A Rainha moveu 8 casas para a esquerda. Saindo...\n");
+    printf("\n");
+  
 
     return 0;
 }
